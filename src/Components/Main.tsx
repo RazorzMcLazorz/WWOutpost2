@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom'
 // import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 // import * as actions from '../js/actions'
@@ -7,14 +8,16 @@ interface IProps {
 
 }
 
-class MainMenu extends React.Component<IProps> {
-    constructor(props: any){
-        super(props)
-        this.state = {}
-    }
+export default class MainMenu extends React.Component<IProps> {
+
+    state = {}
 
     render() {
-        return ('He');
+        return (
+            <div>
+                Hey i worked
+            </div>
+        )
     }
 }
 
@@ -24,4 +27,10 @@ class MainMenu extends React.Component<IProps> {
 
 // MainMenu = connect(mapStateToProps, actions)(MainMenu);
 
-export default MainMenu;
+// const elem = () => <MainMenu />
+
+// render(
+//     React.createElement(elem),
+//     document.getElementById('example')
+// )
+

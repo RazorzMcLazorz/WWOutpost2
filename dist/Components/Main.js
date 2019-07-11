@@ -4,17 +4,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
+const react_dom_1 = require("react-dom");
 class MainMenu extends react_1.default.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super(...arguments);
         this.state = {};
     }
     render() {
-        return ('He');
+        return (react_1.default.createElement("div", null, "Hey i worked"));
     }
 }
 // const mapStateToProps = (state) => {
 //     return state
 // }
 // MainMenu = connect(mapStateToProps, actions)(MainMenu);
-exports.default = MainMenu;
+react_dom_1.render(react_1.default.createElement(MainMenu), document.getElementById('example'));

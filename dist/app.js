@@ -11,7 +11,7 @@ app.use(express_1.default.static(__dirname + '/dist/'));
 //   res.sendFile(__dirname + '/index.html');
 // })
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/Components/Main.tsx');
+    res.sendFile(__dirname + '/index.html');
 });
 app.listen(port, () => console.log('Server Running'));
 console.log('Compiled');
